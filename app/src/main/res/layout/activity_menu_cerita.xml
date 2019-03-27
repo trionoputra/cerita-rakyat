@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_menu1"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/peta" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/baca" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:src="@mipmap/kop" />
+   
+    <RelativeLayout android:layout_height="match_parent"
+        			android:layout_width="match_parent"
+        			android:layout_marginRight="20dp"
+        			android:layout_marginLeft="20dp"
+        			android:layout_below="@+id/imageView3"
+        			android:layout_marginTop="20dp"
+        			android:layout_marginBottom="80dp"
+        			android:layout_centerInParent="true"
+        			android:background="@mipmap/bg">
+
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:dividerHeight="10dp"
+            android:divider="@null"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+        </ListView>
+
+    </RelativeLayout>
+    
+     <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/imageView3"
+            android:src="@mipmap/pulau" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+	
+</RelativeLayout>

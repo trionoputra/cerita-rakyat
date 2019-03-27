@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_menu2"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/peta" />
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/orang" />
+
+        <RelativeLayout
+            android:id="@+id/imageView5"
+            android:layout_height="match_parent"
+    		android:layout_width="match_parent"
+    		android:layout_marginRight="10dp"
+    		android:layout_marginLeft="10dp"
+            android:layout_below="@+id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-5dp"
+            android:background="@mipmap/bg_isi_cerita2" >
+
+            <WebView
+                android:id="@+id/webView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+         
+         </RelativeLayout>
+         
+        <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentTop="true"
+	        android:background="#11000000"
+	        android:clickable="true"
+	        android:id="@+id/loading"
+	        android:visibility="gone"
+	        android:layout_centerHorizontal="true" >
+
+		<ProgressBar
+		    android:id="@+id/progressBar1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true" />
+
+    	</RelativeLayout>
+
+    </RelativeLayout>
+	
+</RelativeLayout>

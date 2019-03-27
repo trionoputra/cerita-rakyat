@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="putih">#FFF</color>
+        <color name="item">#000</color>
+        <color name="putih_transparan">#77ffffff</color>
+        <color name="item_transparan">#77000000</color>
+</resources>
+
